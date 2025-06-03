@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kid Coder Pro - Learn JavaScript</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+  />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="sidebar">
+    <img src="https://cdn-icons-png.flaticon.com/512/2922/2922506.png" id="kidAvatar" alt="Kid Coder Avatar" />
+    <a href="#home" class="active" data-section="Home"><i class="fas fa-home"></i>HOME</a>
+    <a href="#skills" data-section="Skills"><i class="fas fa-chart-line"></i>SKILLS</a>
+    <a href="#interactive-js" data-section="JS Fun"><i class="fas fa-code"></i>JS FUN</a>
+    <a href="#contact" data-section="Contact"><i class="fas fa-envelope"></i>CONTACT</a>
+  </nav>
+
+  <main id="main">
+    <header id="home" class="section-header">
+      <h1>Kid Coder Pro</h1>
+      <p>Become a JavaScript Pro - Fun & Interactive!</p>
+      <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=700&q=80" alt="Kids Coding" />
+    </header>
+
+    <section id="skills" class="section">
+      <h2 class="section-title">My JavaScript Skills</h2>
+      <div class="skill-container">
+        <div class="skill-label">Variables & Data Types</div>
+        <div class="skill-bar-wrapper"><div class="skill-bar" style="width: 95%;"></div></div>
+      </div>
+      <div class="skill-container">
+        <div class="skill-label">Functions & Events</div>
+        <div class="skill-bar-wrapper"><div class="skill-bar" style="width: 88%;"></div></div>
+      </div>
+      <div class="skill-container">
+        <div class="skill-label">Loops & Conditions</div>
+        <div class="skill-bar-wrapper"><div class="skill-bar" style="width: 80%;"></div></div>
+      </div>
+      <div class="skill-container">
+        <div class="skill-label">DOM Manipulation</div>
+        <div class="skill-bar-wrapper"><div class="skill-bar" style="width: 70%;"></div></div>
+      </div>
+    </section>
+
+    <section id="interactive-js" class="section">
+      <h2 class="section-title">Try It Yourself! 👨‍💻</h2>
+      <p>Type your name and click the button to see JavaScript say hello like a pro!</p>
+      <input type="text" id="nameInput" placeholder="Enter your name..." />
+      <button id="sayHelloBtn">Say Hello</button>
+      <p id="greeting"></p>
+    </section>
+
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact Me</h2>
+      <p style="text-align:center; color:#a7f3d0;">
+        Have questions or want to share your code? Send me a message!<br />
+        <a href="mailto:kidcoderpro@example.com" style="color:#4ade80; font-weight:700; text-decoration:none;">kidcoderpro@example.com</a>
+      </p>
+    </section>
+
+    <div id="toast"></div>
+
+    <footer>
+      &copy; 2025 Kid Coder Pro — Made with ❤️ to help kids become coding pros!
+    </footer>
+  </main>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
